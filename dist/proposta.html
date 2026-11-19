@@ -6,24 +6,28 @@
   <title>Papelaria do Estudante — Diagnóstico Digital &amp; Proposta Comercial | DLuz Digital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --paper: #f8fafc;
+      --paper: #faf8f5;
       --plate: #ffffff;
-      --cotton: #f1f5f9;
-      --ink: #0f172a;
-      --ink-secondary: #334155;
-      --ink-muted: #64748b;
-      --rule: #e2e8f0;
-      --navy: #0b1c36;
-      --navy-dark: #071224;
-      --red: #d92635;
-      --amber: #d97706;
+      --cotton: #f3eee6;
+      --linen: #eae3d6;
+      --ink: #161a22;
+      --ink-secondary: #404753;
+      --ink-muted: #6e7683;
+      --rule: #ded6c8;
+      --rule-dark: #c8bead;
+      --academic-navy: #132647;
+      --school-red: #b92025;
+      --school-red-hover: #9c171b;
+      --warm-amber: #b86e00;
       --whatsapp: #15803d;
-      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --whatsapp-hover: #166534;
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
-      --radius: 6px;
+      --radius: 3px;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
@@ -32,12 +36,13 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: var(--font-main);
+      font-family: var(--font-body);
       font-size: 14.5px;
       line-height: 1.55;
       -webkit-font-smoothing: antialiased;
     }
 
+    ::selection { background: #fecdd3; color: var(--ink); }
     .tabular { font-variant-numeric: tabular-nums; }
     .mono { font-family: var(--font-mono); }
     a { color: inherit; text-decoration: none; }
@@ -48,7 +53,7 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: var(--navy-dark);
+      background: var(--academic-navy);
       color: #ffffff;
       padding: 12px 24px;
       border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -92,23 +97,10 @@
       transition: all 0.15s ease;
     }
 
-    .btn-bar:hover {
-      background: rgba(255,255,255,0.1);
-    }
-
-    .btn-bar.primary {
-      background: var(--red);
-      border-color: var(--red);
-    }
-
-    .btn-bar.primary:hover {
-      background: #b91c1c;
-    }
-
-    .btn-bar.wa {
-      background: var(--whatsapp);
-      border-color: var(--whatsapp);
-    }
+    .btn-bar:hover { background: rgba(255,255,255,0.1); }
+    .btn-bar.primary { background: var(--school-red); border-color: var(--school-red); }
+    .btn-bar.primary:hover { background: var(--school-red-hover); }
+    .btn-bar.wa { background: var(--whatsapp); border-color: var(--whatsapp); }
 
     /* Main Sheet */
     .sheet {
@@ -118,7 +110,6 @@
       border: 1px solid var(--rule);
       border-radius: var(--radius);
       padding: 44px 48px;
-      box-shadow: 0 4px 16px rgba(11,28,54,0.06);
     }
 
     .sheet-head {
@@ -127,7 +118,7 @@
       justify-content: space-between;
       gap: 24px;
       padding-bottom: 24px;
-      border-bottom: 2px solid var(--navy);
+      border-bottom: 2px solid var(--academic-navy);
     }
 
     .head-brand-group {
@@ -141,7 +132,7 @@
       width: 58px;
       height: 58px;
       border-radius: 50%;
-      border: 2px solid var(--navy);
+      border: 1px solid var(--rule-dark);
       padding: 2px;
       background: var(--plate);
       overflow: hidden;
@@ -149,11 +140,11 @@
 
     .sheet-head h1 {
       margin: 0;
-      font-size: 26px;
+      font-family: var(--font-display);
+      font-size: 28px;
       font-weight: 800;
-      color: var(--navy);
-      letter-spacing: -0.02em;
-      line-height: 1.2;
+      color: var(--academic-navy);
+      line-height: 1.15;
     }
 
     .sheet-head-sub {
@@ -172,22 +163,20 @@
 
     .sheet-meta strong {
       display: block;
-      color: var(--navy);
+      color: var(--academic-navy);
       font-size: 14px;
       font-weight: 700;
     }
 
     /* Section Blocks */
-    .sheet-block {
-      margin-top: 36px;
-    }
+    .sheet-block { margin-top: 36px; }
 
     .sheet-block h2 {
-      margin: 0 0 6px;
-      font-size: 20px;
-      font-weight: 800;
-      color: var(--navy);
-      letter-spacing: -0.01em;
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--academic-navy);
     }
 
     .block-intro {
@@ -200,7 +189,7 @@
     .audit-table {
       width: 100%;
       border-collapse: collapse;
-      border-top: 2px solid var(--navy);
+      border-top: 2px solid var(--academic-navy);
       margin-bottom: 10px;
     }
 
@@ -220,14 +209,8 @@
       background: var(--cotton);
     }
 
-    .status-gap {
-      color: #b91c1c;
-      font-weight: 600;
-    }
-
-    .status-plan {
-      color: var(--ink-secondary);
-    }
+    .status-gap { color: #b91c1c; font-weight: 600; }
+    .status-plan { color: var(--ink-secondary); }
 
     /* Samples Grid */
     .samples-grid {
@@ -248,7 +231,7 @@
 
     .sample-cell img {
       width: 100%;
-      height: 190px;
+      height: 180px;
       object-fit: cover;
       background: var(--cotton);
       border-bottom: 1px solid var(--rule);
@@ -265,9 +248,10 @@
 
     .sample-meta h3 {
       margin: 0;
-      font-size: 14.5px;
+      font-family: var(--font-display);
+      font-size: 16px;
       font-weight: 700;
-      color: var(--navy);
+      color: var(--academic-navy);
     }
 
     .sample-meta p {
@@ -298,30 +282,30 @@
     }
 
     .pkg-cell.recommended {
-      border: 2px solid var(--navy);
-      background: #f8fafc;
-      box-shadow: 0 4px 12px rgba(11,28,54,0.08);
+      border: 2px solid var(--academic-navy);
+      background: var(--paper);
     }
 
     .pkg-badge {
       position: absolute;
       top: -12px;
       right: 16px;
-      background: var(--navy);
+      background: var(--academic-navy);
       color: #ffffff;
       padding: 3px 10px;
-      border-radius: 4px;
+      border-radius: var(--radius);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
 
     .pkg-cell h3 {
       margin: 0 0 4px;
-      font-size: 17px;
-      font-weight: 800;
-      color: var(--navy);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--academic-navy);
     }
 
     .pkg-desc {
@@ -334,7 +318,7 @@
     .price-box {
       background: var(--cotton);
       border: 1px solid var(--rule);
-      border-radius: 4px;
+      border-radius: var(--radius);
       padding: 12px;
       text-align: center;
     }
@@ -348,9 +332,9 @@
     }
 
     .price-val {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 800;
-      color: var(--navy);
+      color: var(--academic-navy);
       margin: 2px 0;
     }
 
@@ -389,26 +373,18 @@
       align-items: center;
       justify-content: center;
       padding: 10px;
-      background: var(--navy);
+      background: var(--academic-navy);
       color: #ffffff;
       font-size: 13px;
       font-weight: 700;
-      border-radius: 4px;
+      border-radius: var(--radius);
       text-align: center;
       transition: background 0.15s ease;
     }
 
-    .btn-pkg:hover {
-      background: var(--navy-dark);
-    }
-
-    .btn-pkg.green {
-      background: var(--whatsapp);
-    }
-
-    .btn-pkg.green:hover {
-      background: #14532d;
-    }
+    .btn-pkg:hover { background: #0c182d; }
+    .btn-pkg.green { background: var(--whatsapp); }
+    .btn-pkg.green:hover { background: var(--whatsapp-hover); }
 
     /* Terms Box */
     .terms-box {
@@ -423,9 +399,10 @@
 
     .terms-box h4 {
       margin: 0 0 8px;
-      font-size: 14px;
+      font-family: var(--font-display);
+      font-size: 15px;
       font-weight: 700;
-      color: var(--navy);
+      color: var(--academic-navy);
     }
 
     .terms-box ul {
@@ -460,8 +437,8 @@
     @media print {
       body { background: #ffffff; font-size: 11.5px; }
       .control-bar { display: none !important; }
-      .sheet { margin: 0; padding: 0; border: none; box-shadow: none; max-width: 100%; }
-      .sample-cell img { height: 140px; }
+      .sheet { margin: 0; padding: 0; border: none; max-width: 100%; }
+      .sample-cell img { height: 130px; }
     }
   </style>
 </head>
@@ -504,7 +481,7 @@
     <!-- Diagnóstico -->
     <section class="sheet-block">
       <h2>1. Diagnóstico da Presença Atual &amp; Oportunidades</h2>
-      <p class="block-intro">Mapeamento detalhado realizado em novembro de 2026 sobre a busca local em Paraíso do Tocantins, Google Maps e redes sociais da Papelaria do Estudante.</p>
+      <p class="block-intro">Mapeamento direto sobre a busca local em Paraíso do Tocantins, ficha do Google Maps e Instagram da Papelaria do Estudante.</p>
 
       <table class="audit-table">
         <thead>
@@ -516,24 +493,24 @@
         </thead>
         <tbody>
           <tr>
-            <td><strong>Site Oficial &amp; Catálogo</strong></td>
-            <td class="status-gap">Inexistente. Pais e compradores de empresas não encontram um canal para enviar a lista escolar ou solicitar suprimentos corporativos online.</td>
-            <td class="status-plan">Publicação do site próprio de alta conversão com <strong>Simulador de Lista Escolar</strong> integrado ao WhatsApp oficial da loja.</td>
+            <td><strong>Site Oficial &amp; Cotação</strong></td>
+            <td class="status-gap">Inexistente. Pais e empresas não encontram um canal estruturado para envio de listas escolares em 1 clique.</td>
+            <td class="status-plan">Publicação de landing page editorial autêntica com <strong>Fluxo de 3 Passos</strong> e botão direto para o WhatsApp oficial.</td>
           </tr>
           <tr>
             <td><strong>Google Meu Negócio (Maps)</strong></td>
-            <td class="status-gap">Nota 4.4 ★ com 155 avaliações na Av. Bernardo Sayão, porém sem botão de "Website", perdendo mais de 250 cliques/mês para concorrentes.</td>
+            <td class="status-gap">Nota 4.4 ★ com 155 avaliações na Av. Bernardo Sayão, mas sem botão de "Website", perdendo centenas de cliques/mês.</td>
             <td class="status-plan">Vincular o novo site oficial na ficha do Google, ativar catálogo de produtos e posts com novidades de Volta às Aulas.</td>
           </tr>
           <tr>
             <td><strong>Instagram (@papelaria_estudantes)</strong></td>
-            <td class="status-gap">4.3k seguidores reais e fotos de alta qualidade, porém a biografia possui apenas o número de telefone em texto sem link clicável direto.</td>
-            <td class="status-plan">Configurar o link oficial apontando para o site com catálogo das 4 linhas (Escolar, B2B, Presentes e Revelação).</td>
+            <td class="status-gap">4.3k seguidores reais e fotos de alta qualidade, porém a bio possui apenas o número de telefone em texto sem link clicável direto.</td>
+            <td class="status-plan">Inserir o link oficial do novo portal conectando os 4 departamentos (Escolar, B2B, Presentes e Revelação).</td>
           </tr>
           <tr>
-            <td><strong>Captação B2B (Empresas)</strong></td>
-            <td class="status-gap">Escritórios, clínicas e comércios compram insumos fora ou de fornecedores de Palmas por não conhecerem o faturamento local.</td>
-            <td class="status-plan">Página dedicada B2B destacando boleto faturado quinzenal/mensal, agilidade na cotação e entrega no endereço em Paraíso.</td>
+            <td><strong>Faturamento Corporativo (B2B)</strong></td>
+            <td class="status-gap">Empresas e consultórios locais compram insumos fora de Paraíso por não saberem do faturamento em boleto da loja.</td>
+            <td class="status-plan">Área dedicada corporativa destacando boleto faturado quinzenal/mensal, agilidade na cotação e entrega no endereço.</td>
           </tr>
         </tbody>
       </table>
@@ -542,7 +519,7 @@
     <!-- Amostras do Projeto Demonstrativo -->
     <section class="sheet-block">
       <h2>2. Projeto Demonstrativo Desenvolvido &amp; No Ar</h2>
-      <p class="block-intro">Acesse a demonstração completa já funcional em: <a href="https://papelaria-do-estudante.dluz.com.br" target="_blank" style="color: var(--navy); font-weight: 700; text-decoration: underline;">https://papelaria-do-estudante.dluz.com.br</a></p>
+      <p class="block-intro">Acesse a demonstração completa já funcional em: <a href="https://papelaria-do-estudante.dluz.com.br" target="_blank" style="color: var(--academic-navy); font-weight: 700; text-decoration: underline;">https://papelaria-do-estudante.dluz.com.br</a></p>
 
       <div class="samples-grid">
         <div class="sample-cell">
@@ -591,8 +568,8 @@
           </div>
 
           <ul class="pkg-list">
-            <li>Landing Page Completa e Responsiva</li>
-            <li>Simulador de Lista Escolar no WhatsApp</li>
+            <li>Landing Page Editorial e Responsiva</li>
+            <li>Fluxo de Cotação de Lista Escolar no WhatsApp</li>
             <li>Vínculo no Google Meu Negócio (Maps)</li>
             <li>Hospedagem de Alta Velocidade com SSL</li>
             <li>Suporte e backup técnico mensal</li>
@@ -611,15 +588,15 @@
             <p class="pkg-desc">Solução completa para liderar as vendas de início de ano e captar empresas.</p>
           </div>
 
-          <div class="price-box" style="background: #e2e8f0;">
+          <div class="price-box" style="background: var(--cotton);">
             <span class="price-label">Implantação Única</span>
-            <div class="price-val tabular" style="color: var(--red);">R$ 1.490</div>
+            <div class="price-val tabular" style="color: var(--school-red);">R$ 1.490</div>
             <span class="price-sub">+ R$ 147/mês (Manutenção &amp; Otimização)</span>
           </div>
 
           <ul class="pkg-list">
             <li><strong>Tudo do Plano Essencial</strong></li>
-            <li>Simulador de Cotação Dinâmico Multi-itens</li>
+            <li>Montador Rápido de Solicitação de Listas</li>
             <li>Otimização SEO Local no Google Maps (Palavras-chave)</li>
             <li>Módulo Corporativo B2B com Faturamento</li>
             <li>QR Code personalizado para o balcão da loja</li>
