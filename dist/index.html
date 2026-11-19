@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papelaria do Estudante — Material Escolar, Escritório, Presentes &amp; Revelação · Paraíso do Tocantins</title>
+  <meta name="description" content="A papelaria mais tradicional de Paraíso do Tocantins na Av. Bernardo Sayão, 1010. Volta às Aulas, suprimentos de escritório com faturamento B2B, presentes, mochilas e revelação de fotos. Envie sua lista escolar no WhatsApp!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0b1c36;
+      --navy-dark: #071224;
+      --navy-light: #162f55;
+      --navy-surface: #102444;
+      --red: #d92635;
+      --red-hover: #b91c1c;
+      --paper: #f8fafc;
+      --plate: #ffffff;
+      --cotton: #f1f5f9;
+      --border: #e2e8f0;
+      --border-dark: #cbd5e1;
+      --ink: #0f172a;
+      --ink-secondary: #334155;
+      --ink-muted: #64748b;
+      --amber: #d97706;
+      --green: #15803d;
+      --whatsapp: #16a34a;
+      --whatsapp-hover: #15803d;
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --max: 1220px;
+      --shadow-sm: 0 1px 3px rgba(11,28,54,0.06), 0 1px 2px rgba(11,28,54,0.04);
+      --shadow-md: 0 4px 12px rgba(11,28,54,0.08), 0 2px 4px rgba(11,28,54,0.04);
+      --shadow-lg: 0 12px 28px rgba(11,28,54,0.12), 0 4px 8px rgba(11,28,54,0.06);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-main);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    .mono { font-family: var(--font-mono); }
+    .tabular { font-variant-numeric: tabular-nums; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* Top Utility Strip */
+    .utility-strip {
+      background: var(--navy-dark);
+      color: #e2e8f0;
+      font-size: 13px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .utility-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .utility-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .utility-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(217,38,53,0.25);
+      border: 1px solid rgba(217,38,53,0.4);
+      color: #fecdd3;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .utility-right {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 13px;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+      margin-right: 6px;
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 80px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo-frame {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      border: 2px solid var(--navy);
+      padding: 2px;
+      background: var(--plate);
+      box-shadow: 0 2px 6px rgba(11,28,54,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .brand-logo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--red);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--ink-secondary);
+    }
+
+    .header-nav a {
+      transition: color 0.15s ease;
+      position: relative;
+    }
+
+    .header-nav a:hover {
+      color: var(--red);
+    }
+
+    .header-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 15px;
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--plate);
+      transition: all 0.15s ease;
+    }
+
+    .btn-call:hover {
+      border-color: var(--navy);
+      background: var(--cotton);
+    }
+
+    .btn-header-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: var(--whatsapp);
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 2px 8px rgba(22,163,74,0.25);
+      transition: all 0.15s ease;
+    }
+
+    .btn-header-wa:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(22,163,74,0.35);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 56px 0 64px;
+      background: linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      background: #e0e7ff;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.3rem, 4.4vw, 3.4rem);
+      font-weight: 800;
+      color: var(--navy-dark);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span.accent-red {
+      color: var(--red);
+      position: relative;
+    }
+
+    .hero-desc {
+      font-size: 17.5px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .btn-hero-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      background: var(--red);
+      color: #ffffff;
+      font-size: 15.5px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 14px rgba(217,38,53,0.3);
+      transition: all 0.15s ease;
+    }
+
+    .btn-hero-primary:hover {
+      background: var(--red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(217,38,53,0.4);
+    }
+
+    .btn-hero-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 22px;
+      background: var(--plate);
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 700;
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+    }
+
+    .btn-hero-secondary:hover {
+      border-color: var(--navy);
+      background: var(--cotton);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .metric-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .metric-num {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    .metric-label {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--ink-muted);
+      line-height: 1.35;
+      margin-top: 2px;
+    }
+
+    /* Hero Gallery Montage */
+    .hero-media-wrap {
+      position: relative;
+    }
+
+    .gallery-mosaic {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      position: relative;
+    }
+
+    .mosaic-card {
+      background: var(--plate);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .mosaic-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .mosaic-card.featured {
+      grid-column: span 2;
+    }
+
+    .mosaic-img-box {
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      background: var(--cotton);
+      position: relative;
+    }
+
+    .mosaic-card.featured .mosaic-img-box {
+      height: 220px;
+    }
+
+    .mosaic-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.4s ease;
+    }
+
+    .mosaic-card:hover .mosaic-img-box img {
+      transform: scale(1.04);
+    }
+
+    .mosaic-caption {
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: var(--plate);
+      border-top: 1px solid var(--border);
+    }
+
+    .mosaic-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--red);
+    }
+
+    .mosaic-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+
+    .hero-float-badge {
+      position: absolute;
+      bottom: -16px;
+      right: 14px;
+      background: var(--navy);
+      color: #ffffff;
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 2;
+    }
+
+    .hero-float-badge strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .hero-float-badge span {
+      display: block;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 48px;
+    }
+
+    .section-kicker {
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--red);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+      font-weight: 800;
+      color: var(--navy-dark);
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+    }
+
+    /* Interactive Quote Widget / Simulador de Lista */
+    .interactive-section {
+      padding: 80px 0;
+      background: var(--navy-dark);
+      color: #ffffff;
+      position: relative;
+    }
+
+    .interactive-wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      background: var(--navy-surface);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    .calc-head {
+      padding: 32px 36px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.09);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .calc-head h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .calc-head p {
+      font-size: 14.5px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+
+    .calc-step-tag {
+      background: rgba(22,163,74,0.25);
+      border: 1px solid rgba(22,163,74,0.4);
+      color: #4ade80;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 700;
+    }
+
+    .calc-body {
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+    }
+
+    .calc-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .category-pills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .cat-btn {
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-sm);
+      color: #e2e8f0;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: left;
+      transition: all 0.15s ease;
+    }
+
+    .cat-btn:hover, .cat-btn.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: #ffffff;
+    }
+
+    .item-check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(255,255,255,0.03);
+      padding: 9px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px;
+      color: #e2e8f0;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s ease;
+    }
+
+    .check-item:hover {
+      background: rgba(255,255,255,0.07);
+    }
+
+    .check-item input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--red);
+      cursor: pointer;
+    }
+
+    .form-textarea {
+      width: 100%;
+      height: 85px;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius-sm);
+      color: #ffffff;
+      padding: 10px 14px;
+      font-size: 13.5px;
+      font-family: inherit;
+      resize: none;
+    }
+
+    .form-textarea:focus {
+      outline: none;
+      border-color: #38bdf8;
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .form-input {
+      width: 100%;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius-sm);
+      color: #ffffff;
+      padding: 10px 14px;
+      font-size: 13.5px;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #38bdf8;
+    }
+
+    /* Live Preview & Action Card */
+    .calc-preview-card {
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .preview-head {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 14px;
+    }
+
+    .preview-head h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+
+    .preview-head p {
+      font-size: 12.5px;
+      color: #94a3b8;
+      margin-top: 3px;
+    }
+
+    .preview-bubble {
+      background: #064e3b;
+      border: 1px solid #059669;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      font-size: 12.5px;
+      color: #d1fae5;
+      line-height: 1.5;
+      font-family: var(--font-mono);
+      max-height: 180px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+
+    .btn-send-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px;
+      background: var(--whatsapp);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 800;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 16px rgba(22,163,74,0.35);
+      transition: all 0.15s ease;
+    }
+
+    .btn-send-wa:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(22,163,74,0.45);
+    }
+
+    .preview-guarantees {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .preview-guarantees span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Catalog Sections / 4 Universos */
+    .catalog-section {
+      padding: 88px 0;
+      background: var(--plate);
+    }
+
+    .catalog-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .cat-card {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-dark);
+    }
+
+    .cat-img-wrap {
+      width: 100%;
+      height: 240px;
+      background: var(--cotton);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cat-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.35s ease;
+    }
+
+    .cat-card:hover .cat-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .cat-badge-float {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--navy-dark);
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .cat-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .cat-content h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+
+    .cat-content p {
+      font-size: 14.5px;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+    }
+
+    .cat-feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin: 10px 0;
+      font-size: 13.5px;
+      color: var(--ink-secondary);
+    }
+
+    .cat-feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cat-feature-list li::before {
+      content: "✓";
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .cat-cta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--red);
+      transition: gap 0.15s ease;
+      margin-top: auto;
+    }
+
+    .cat-cta-link:hover {
+      color: var(--red-hover);
+      gap: 10px;
+    }
+
+    /* B2B Corporativo Strip */
+    .b2b-section {
+      padding: 72px 0;
+      background: var(--cotton);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .b2b-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .b2b-badge {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      background: #e2e8f0;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .b2b-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .b2b-desc {
+      font-size: 16px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .b2b-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .b2b-benefit-card {
+      background: var(--plate);
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+    }
+
+    .b2b-benefit-card strong {
+      display: block;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .b2b-benefit-card p {
+      font-size: 12.5px;
+      color: var(--ink-muted);
+      line-height: 1.4;
+    }
+
+    .b2b-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease;
+    }
+
+    .b2b-cta-btn:hover {
+      background: var(--navy-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Testimonials / Social Proof */
+    .reviews-section {
+      padding: 80px 0;
+      background: var(--paper);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: var(--plate);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .stars {
+      color: #f59e0b;
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+
+    .review-text {
+      font-size: 14.5px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid var(--cotton);
+      padding-top: 14px;
+    }
+
+    .reviewer-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13.5px;
+      font-weight: 700;
+    }
+
+    .reviewer-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .reviewer-tag {
+      font-size: 11.5px;
+      color: var(--ink-muted);
+    }
+
+    /* Location & Hours Section */
+    .location-section {
+      padding: 80px 0;
+      background: var(--plate);
+      border-top: 1px solid var(--border);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .info-card-box {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: #fee2e2;
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .info-item-content h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .info-item-content p {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.45;
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 13.5px;
+    }
+
+    .schedule-table tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .schedule-table td {
+      padding: 7px 0;
+      color: var(--ink-secondary);
+    }
+
+    .schedule-table td:last-child {
+      text-align: right;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* Map visual block */
+    .map-visual-box {
+      background: var(--cotton);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      min-height: 340px;
+    }
+
+    .map-pin-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--red);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 14px rgba(217,38,53,0.3);
+    }
+
+    .btn-maps-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 14.5px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease;
+    }
+
+    .btn-maps-action:hover {
+      background: var(--navy-dark);
+      transform: translateY(-2px);
+    }
+
+    /* DLuz Digital Showcase Strip */
+    .dluz-showcase-strip {
+      background: #070e1b;
+      color: #cbd5e1;
+      padding: 36px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 14px;
+    }
+
+    .dluz-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .dluz-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .dluz-badge-tag {
+      background: rgba(56,189,248,0.15);
+      border: 1px solid rgba(56,189,248,0.3);
+      color: #7dd3fc;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-dluz-proposta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #ffffff;
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+
+    .btn-dluz-proposta:hover {
+      background: #ffffff;
+      color: #070e1b;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--navy-dark);
+      color: #94a3b8;
+      padding: 56px 0 32px;
+      font-size: 14px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h5 {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    /* Floating WhatsApp Button */
+    .wa-float-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 99;
+      background: var(--whatsapp);
+      color: #ffffff;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(22,163,74,0.45);
+      transition: all 0.2s ease;
+    }
+
+    .wa-float-btn:hover {
+      background: var(--whatsapp-hover);
+      transform: scale(1.08) translateY(-2px);
+    }
+
+    .wa-float-btn svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid, .calc-body, .catalog-grid-4, .b2b-grid, .location-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .header-nav {
+        display: none;
+      }
+      .hero-metrics {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Utility Strip -->
+  <div class="utility-strip">
+    <div class="wrap utility-inner">
+      <div class="utility-left">
+        <span class="utility-badge">🎒 Volta às Aulas 2026</span>
+        <span>Envie sua lista escolar pelo WhatsApp e receba orçamento no mesmo dia</span>
+      </div>
+      <div class="utility-right">
+        <span class="tabular"><span class="status-dot"></span><span id="store-status">Aberto Hoje até 18:00</span></span>
+        <span class="tabular">Fixo: (63) 3602-1740</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#inicio" class="brand-link">
+        <div class="brand-logo-frame">
+          <img src="assets/logo.jpg" alt="Papelaria do Estudante - Logo Oficial" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Papelaria do Estudante</span>
+          <span class="brand-sub">Simplesmente completo!</span>
+        </div>
+      </a>
+
+      <nav class="header-nav">
+        <a href="#inicio">Início</a>
+        <a href="#cotacao">Cotação de Lista</a>
+        <a href="#linhas">Nossas Linhas</a>
+        <a href="#corporativo">Empresas (B2B)</a>
+        <a href="#localizacao">Onde Estamos</a>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="tel:6336021740" class="btn-call tabular">
+          <span>(63) 3602-1740</span>
+        </a>
+        <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20na%20Papelaria%20do%20Estudante!" target="_blank" rel="noopener" class="btn-header-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.04-2.02-.49-1.378-.553-2.28-1.93-2.348-2.02-.069-.092-.56-1.144-.56-2.181 0-1.037.545-1.545.739-1.758.194-.213.424-.266.565-.266.141 0 .282.002.405.008.13.006.304-.049.475.362.176.424.6 1.469.653 1.576.053.107.089.232.018.374-.07.141-.106.232-.212.355-.106.124-.222.277-.318.372-.106.106-.217.221-.093.433.124.212.55 1.055 1.18 1.616.812.724 1.498.948 1.711 1.054.212.106.336.089.46-.053.124-.142.53-.619.672-.831.141-.213.283-.177.476-.106.194.071 1.233.582 1.445.688.212.106.353.159.406.248.053.088.053.513-.091.918z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <span class="hero-kicker">📍 Av. Bernardo Sayão, 1010 • Centro de Paraíso</span>
+        <h1 class="hero-title">A papelaria mais completa de <span class="accent-red">Paraíso do Tocantins</span>.</h1>
+        <p class="hero-desc">
+          Do material escolar dos seus filhos aos suprimentos com faturamento faturado para a sua empresa. Tradição, milhares de itens à pronta entrega e o carinho que você já conhece na Av. Bernardo Sayão.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cotacao" class="btn-hero-primary">
+            <span>Pedir Cotação de Lista Escolar</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#linhas" class="btn-hero-secondary">
+            <span>Ver Linhas de Produtos</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-num tabular">4.4 ★</span>
+            <span class="metric-label">155 avaliações reais no Google Maps</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num tabular">4.3k+</span>
+            <span class="metric-label">Seguidores no Instagram @papelaria_estudantes</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num tabular">100%</span>
+            <span class="metric-label">Faturamento faturado CNPJ para empresas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Gallery Collage -->
+      <div class="hero-media-wrap">
+        <div class="gallery-mosaic">
+          <div class="mosaic-card featured">
+            <div class="mosaic-img-box">
+              <img src="assets/material-escolar.jpg" alt="Mochilas e Materiais Escolares na Papelaria do Estudante" />
+            </div>
+            <div class="mosaic-caption">
+              <div>
+                <span class="mosaic-tag">Linha Escolar &amp; Executiva</span>
+                <span class="mosaic-title">Mochilas, estojos e Volta às Aulas</span>
+              </div>
+              <span class="mono" style="font-size: 12px; color: var(--ink-muted);">Centro</span>
+            </div>
+          </div>
+
+          <div class="mosaic-card">
+            <div class="mosaic-img-box">
+              <img src="assets/embalagens-presentes.jpg" alt="Literatura, Poesias e Canetas Coloridas" />
+            </div>
+            <div class="mosaic-caption">
+              <span class="mosaic-title">Literatura &amp; Presentes</span>
+            </div>
+          </div>
+
+          <div class="mosaic-card">
+            <div class="mosaic-img-box">
+              <img src="assets/escritorio-papelaria.jpg" alt="Suprimentos de Escritório e Papelaria Técnica" />
+            </div>
+            <div class="mosaic-caption">
+              <span class="mosaic-title">Suprimentos B2B</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-float-badge">
+          <div style="font-size: 24px;">🏪</div>
+          <div>
+            <strong>Balcão Tradicional no Centro</strong>
+            <span>Atendimento humano sem filas virtuais</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Section: Simulador de Lista & Pedido -->
+  <section class="interactive-section" id="cotacao">
+    <div class="wrap">
+      <div class="interactive-wrap">
+        <div class="calc-head">
+          <div>
+            <h3>Simulador de Lista Escolar &amp; Suprimentos</h3>
+            <p>Selecione os itens da sua lista e envie direto para o WhatsApp do balcão em 1 clique.</p>
+          </div>
+          <span class="calc-step-tag">⚡ Resposta Rápida no WhatsApp</span>
+        </div>
+
+        <div class="calc-body">
+          <div class="calc-inputs">
+            <div class="form-group">
+              <label>1. Categoria Principal</label>
+              <div class="category-pills">
+                <button type="button" class="cat-btn active" onclick="setCategory(this, 'Volta às Aulas / Material Escolar')">🎒 Volta às Aulas</button>
+                <button type="button" class="cat-btn" onclick="setCategory(this, 'Suprimentos Corporativos / Escritório')">🏢 Escritório &amp; B2B</button>
+                <button type="button" class="cat-btn" onclick="setCategory(this, 'Presentes, Mochilas & Papelaria Fofa')">🎁 Presentes &amp; Mochilas</button>
+                <button type="button" class="cat-btn" onclick="setCategory(this, 'Revelação Fotográfica & Cópias')">📸 Revelação de Fotos</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>2. Itens Frequentes (Marque para incluir)</label>
+              <div class="item-check-grid" id="checkGrid">
+                <label class="check-item"><input type="checkbox" value="Cadernos Universitários (10/20 mat.)" onchange="updatePreview()"> Cadernos 10/20 mat.</label>
+                <label class="check-item"><input type="checkbox" value="Lápis de Cor Faber-Castell" onchange="updatePreview()"> Lápis de Cor</label>
+                <label class="check-item"><input type="checkbox" value="Mochila / Estojo Escolar" onchange="updatePreview()"> Mochila / Estojo</label>
+                <label class="check-item"><input type="checkbox" value="Canetas Esferográficas / Gel" onchange="updatePreview()"> Canetas &amp; Marcadores</label>
+                <label class="check-item"><input type="checkbox" value="Resma de Papel A4 Chamex" onchange="updatePreview()"> Papel A4 Chamex</label>
+                <label class="check-item"><input type="checkbox" value="Pastas & Organizadores" onchange="updatePreview()"> Pastas &amp; Arquivo</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>3. Cole sua Lista ou Itens Específicos</label>
+              <textarea class="form-textarea" id="listaTexto" placeholder="Ex: 2 cadernos capa dura, 1 cx lápis 24 cores, 1 cola bastão, tesoura sem ponta, 1 resma A4..." oninput="updatePreview()"></textarea>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Seu Nome</label>
+                <input type="text" class="form-input" id="clienteNome" placeholder="Ex: Maria Oliveira" oninput="updatePreview()" />
+              </div>
+              <div class="form-group">
+                <label>Preferência de Entrega</label>
+                <select class="form-input" id="entregaModo" onchange="updatePreview()" style="background: rgba(0,0,0,0.4); color: #fff;">
+                  <option value="Retirar no Balcão (Av. Bernardo Sayão, 1010)">Retirar no Balcão (Centro)</option>
+                  <option value="Entrega em Paraíso do Tocantins">Entrega em Paraíso (Cidade)</option>
+                  <option value="Faturamento Corporativo para Empresa">Faturamento Empresa (B2B)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview Card -->
+          <div class="calc-preview-card">
+            <div>
+              <div class="preview-head">
+                <h4>Mensagem Pronta para o WhatsApp</h4>
+                <p>O texto abaixo será enviado automaticamente para a atendente da Papelaria do Estudante:</p>
+              </div>
+              <div class="preview-bubble" id="msgPreview">
+Olá, Papelaria do Estudante!
+Gostaria de uma cotação:
+- Categoria: Volta às Aulas / Material Escolar
+- Itens: A definir
+- Preferência: Retirar no Balcão (Av. Bernardo Sayão, 1010)
+              </div>
+            </div>
+
+            <div>
+              <a href="#" id="waLinkBtn" target="_blank" rel="noopener" class="btn-send-wa">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.04-2.02-.49-1.378-.553-2.28-1.93-2.348-2.02-.069-.092-.56-1.144-.56-2.181 0-1.037.545-1.545.739-1.758.194-.213.424-.266.565-.266.141 0 .282.002.405.008.13.006.304-.049.475.362.176.424.6 1.469.653 1.576.053.107.089.232.018.374-.07.141-.106.232-.212.355-.106.124-.222.277-.318.372-.106.106-.217.221-.093.433.124.212.55 1.055 1.18 1.616.812.724 1.498.948 1.711 1.054.212.106.336.089.46-.053.124-.142.53-.619.672-.831.141-.213.283-.177.476-.106.194.071 1.233.582 1.445.688.212.106.353.159.406.248.053.088.053.513-.091.918z"/></svg>
+                <span>Enviar pelo WhatsApp Agora</span>
+              </a>
+              <div class="preview-guarantees" style="margin-top: 14px;">
+                <span>🔒 WhatsApp Oficial Validado: (63) 99234-5060</span>
+                <span>⚡ Cotação sem compromisso com marcas originais</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Linhas: 4 Universos -->
+  <section class="catalog-section" id="linhas">
+    <div class="wrap">
+      <div class="section-header">
+        <span class="section-kicker">Variedade Incomparável</span>
+        <h2 class="section-title">4 Grandes Linhas em um Só Endereço</h2>
+        <p class="section-desc">Seja para a lista escolar do colégio, o suprimento diário da sua empresa ou um presente especial, você encontra tudo reunido na Av. Bernardo Sayão.</p>
+      </div>
+
+      <div class="catalog-grid-4">
+        <!-- Linha 1 -->
+        <div class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="assets/material-escolar.jpg" alt="Volta às Aulas e Material Escolar Completo" />
+            <span class="cat-badge-float">Volta às Aulas</span>
+          </div>
+          <div class="cat-content">
+            <div>
+              <h3>Material Escolar &amp; Mochilas</h3>
+              <p>Linha completa para Educação Infantil, Ensino Fundamental, Médio e Universitário com as marcas mais recomendadas pelas escolas de Paraíso.</p>
+              <ul class="cat-feature-list">
+                <li>Mochilas ergonômicas com rodinhas e modelos executivos</li>
+                <li>Cadernos temáticos e universitários de 1 a 20 matérias</li>
+                <li>Lápis de cor, canetinhas, colas, tesouras e estojos reforçados</li>
+                <li>Marcas consagradas: Faber-Castell, Tilibra, Stabilo, CIS</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20gostaria%20de%20cotar%20material%20escolar%20na%20Papelaria%20do%20Estudante!" target="_blank" rel="noopener" class="cat-cta-link">
+              <span>Cotar Material Escolar</span> →
+            </a>
+          </div>
+        </div>
+
+        <!-- Linha 2 -->
+        <div class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="assets/escritorio-papelaria.jpg" alt="Suprimentos de Escritório Corporativo" />
+            <span class="cat-badge-float">Corporativo &amp; Empresas</span>
+          </div>
+          <div class="cat-content">
+            <div>
+              <h3>Suprimentos de Escritório (B2B)</h3>
+              <p>Abastecimento contínuo para escritórios, clínicas, comércios e repartições com faturamento em boleto e nota fiscal eletrônica rápida.</p>
+              <ul class="cat-feature-list">
+                <li>Resmas e caixas de Papel A4 Chamex e Report</li>
+                <li>Bobinas térmicas para cupom fiscal e maquininhas de cartão</li>
+                <li>Pastas suspensas, envelopes, organizadores e grampeadores</li>
+                <li>Faturamento facilitado quinzenal ou mensal para CNPJ</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20preciso%20de%20suprimentos%20de%20escrit%C3%B3rio%20para%20minha%20empresa!" target="_blank" rel="noopener" class="cat-cta-link">
+              <span>Atendimento Corporativo</span> →
+            </a>
+          </div>
+        </div>
+
+        <!-- Linha 3 -->
+        <div class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="assets/embalagens-presentes.jpg" alt="Presentes Criativos, Livros e Papelaria Fofa" />
+            <span class="cat-badge-float">Presentes &amp; Livros</span>
+          </div>
+          <div class="cat-content">
+            <div>
+              <h3>Presentes, Papelaria Fofa &amp; Livros</h3>
+              <p>O encanto das canetas gel, planners, cadernos especiais, livros de poesias e literatura e embalagens requintadas para presentear.</p>
+              <ul class="cat-feature-list">
+                <li>Canetas brush pen, marcadores em tons pastel e lettering</li>
+                <li>Planners 2026, agendas permanentes e blocos de notas elegantes</li>
+                <li>Livros literários, poesias e artigos inspiradores</li>
+                <li>Embalagens, caixas decorativas, fitas e sacolas de presente</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20gostaria%20de%20ver%20op%C3%A7%C3%B5es%20de%20presentes%20e%20livros!" target="_blank" rel="noopener" class="cat-cta-link">
+              <span>Ver Opções de Presentes</span> →
+            </a>
+          </div>
+        </div>
+
+        <!-- Linha 4 -->
+        <div class="cat-card">
+          <div class="cat-img-wrap">
+            <img src="assets/brinquedos-revelacao.jpg" alt="Revelação Fotográfica e Brinquedos Educativos" />
+            <span class="cat-badge-float">Serviços Gráficos</span>
+          </div>
+          <div class="cat-content">
+            <div>
+              <h3>Revelação de Fotos &amp; Gráfica Rápida</h3>
+              <p>Eternize seus momentos com revelação fotográfica de altíssima nitidez e conte com nossa estrutura para serviços gráficos diários.</p>
+              <ul class="cat-feature-list">
+                <li>Revelação digital em papel fotográfico profissional (10x15, 15x21)</li>
+                <li>Plastificação a quente de documentos, crachás e títulos</li>
+                <li>Encadernação em espiral para apostilas, relatórios e monografias</li>
+                <li>Brinquedos pedagógicos e educativos para todas as idades</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20gostaria%20de%20revelar%20fotos%20na%20Papelaria%20do%20Estudante!" target="_blank" rel="noopener" class="cat-cta-link">
+              <span>Enviar Fotos para Revelação</span> →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B Corporativo Strip -->
+  <section class="b2b-section" id="corporativo">
+    <div class="wrap b2b-grid">
+      <div>
+        <span class="b2b-badge">Atendimento B2B Especializado</span>
+        <h2 class="b2b-title">Sua empresa não pode parar por falta de suprimentos.</h2>
+        <p class="b2b-desc">
+          Atendemos empresas, clínicas, cartórios, escritórios de contabilidade e advocacia de Paraíso do Tocantins com condições exclusivas de faturamento faturado, cotações em tempo recorde e entrega rápida.
+        </p>
+
+        <div class="b2b-benefits">
+          <div class="b2b-benefit-card">
+            <strong>Boleto Faturado</strong>
+            <p>Prazos quinzenais e mensais cadastrados para o seu CNPJ.</p>
+          </div>
+          <div class="b2b-benefit-card">
+            <strong>Orçamento Rápido</strong>
+            <p>Retorno de cotação de insumos em até 1 hora no WhatsApp.</p>
+          </div>
+          <div class="b2b-benefit-card">
+            <strong>Nota Fiscal Eletrônica</strong>
+            <p>Emissão de NF-e completa para prestação de contas contábil.</p>
+          </div>
+          <div class="b2b-benefit-card">
+            <strong>Entrega no Endereço</strong>
+            <p>Receba resmas de papel e materiais diretamente no escritório.</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20sou%20empresa%20e%20gostaria%20de%20abrir%20cadastro%20corporativo%20na%20Papelaria%20do%20Estudante!" target="_blank" rel="noopener" class="b2b-cta-btn">
+          <span>Cadastrar Minha Empresa no WhatsApp</span> →
+        </a>
+      </div>
+
+      <div style="background: var(--plate); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 32px; box-shadow: var(--shadow-md);">
+        <h3 style="font-size: 20px; font-weight: 800; color: var(--navy); margin-bottom: 14px;">Insumos Corporativos Mais Pedidos</h3>
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 0; color: var(--ink-secondary);">Caixa Papel A4 Chamex / Report (10 resmas)</td>
+            <td style="padding: 10px 0; text-align: right; font-weight: 700; color: var(--navy);">Em Estoque</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 0; color: var(--ink-secondary);">Bobinas Térmicas 80mm x 40m para Cupom Fiscal</td>
+            <td style="padding: 10px 0; text-align: right; font-weight: 700; color: var(--navy);">Em Estoque</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 0; color: var(--ink-secondary);">Pastas Suspensas Kraft e Plásticas</td>
+            <td style="padding: 10px 0; text-align: right; font-weight: 700; color: var(--navy);">Em Estoque</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px 0; color: var(--ink-secondary);">Envelopes Carta, Saco Ouro e Branco</td>
+            <td style="padding: 10px 0; text-align: right; font-weight: 700; color: var(--navy);">Em Estoque</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 0; color: var(--ink-secondary);">Grampeadores Profissionais, Extratores e Grampos</td>
+            <td style="padding: 10px 0; text-align: right; font-weight: 700; color: var(--navy);">Em Estoque</td>
+          </tr>
+        </table>
+        <div style="margin-top: 20px; padding: 14px; background: var(--cotton); border-radius: var(--radius-sm); font-size: 13px; color: var(--ink-secondary);">
+          💡 <strong>Dica Corporativa:</strong> Feche um pedido programado mensal e garanta condições especiais de preço por volume.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos Reais / Google Reviews -->
+  <section class="reviews-section">
+    <div class="wrap">
+      <div class="section-header">
+        <span class="section-kicker">Confiança Comprovada</span>
+        <h2 class="section-title">O que os Clientes de Paraíso Falam</h2>
+        <p class="section-desc">Com nota 4.4 e mais de 155 avaliações no Google Maps, a Papelaria do Estudante é ponto de referência na cidade há anos.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Excelente atendimento! Sempre compro o material escolar dos meus filhos aqui. Encontro tudo da lista de uma vez só e o preço é justo. Recomendo demais!"</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">AC</div>
+            <div>
+              <span class="reviewer-name">Ana Cláudia Silva</span>
+              <span class="reviewer-tag">Cliente Local • Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Papelaria tradicional de Paraíso, muito completa! Compro o papel A4 e materiais de escritório para nossa empresa todo mês. Praticidade nota dez."</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">MS</div>
+            <div>
+              <span class="reviewer-name">Marcos Santana</span>
+              <span class="reviewer-tag">Cliente Corporativo • Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Muito carinho no atendimento, variedade enorme de canetas e presentes criativos. A revelação de fotos também ficou perfeita!"</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">JL</div>
+            <div>
+              <span class="reviewer-name">Juliana Lima</span>
+              <span class="reviewer-tag">Cliente Local • Google Review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização & Horários -->
+  <section class="location-section" id="localizacao">
+    <div class="wrap location-grid">
+      <div>
+        <span class="section-kicker">Venha nos Visitar</span>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Fácil Acesso no Coração de Paraíso</h2>
+
+        <div class="info-card-box">
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-item-content">
+              <h4>Endereço Físico</h4>
+              <p>Av. Bernardo Sayão, 1010 – Centro<br />Paraíso do Tocantins - TO • CEP 77600-000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-item-content">
+              <h4>Telefones de Atendimento</h4>
+              <p>WhatsApp: <strong>(63) 99234-5060</strong><br />Telefone Fixo: <strong>(63) 3602-1740</strong></p>
+            </div>
+          </div>
+
+          <div class="info-item" style="margin-bottom: 0;">
+            <div class="info-icon">⏰</div>
+            <div class="info-item-content" style="width: 100%;">
+              <h4>Horário de Funcionamento</h4>
+              <table class="schedule-table">
+                <tr><td>Segunda a Sexta</td><td>08:00 às 18:00</td></tr>
+                <tr><td>Sábado</td><td>08:00 às 12:00</td></tr>
+                <tr><td>Domingo e Feriados</td><td style="color: var(--red);">Fechado</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Block -->
+      <div class="map-visual-box">
+        <div class="map-pin-circle">📍</div>
+        <h3 style="font-size: 22px; font-weight: 800; color: var(--navy);">Papelaria do Estudante</h3>
+        <p style="font-size: 15px; color: var(--ink-secondary); max-width: 360px;">
+          Localizada na avenida comercial mais tradicional da cidade, em frente a pontos conhecidos do Centro de Paraíso.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+          <a href="https://maps.google.com/?q=Papelaria+do+Estudante+Paraiso+do+Tocantins" target="_blank" rel="noopener" class="btn-maps-action">
+            <span>Abrir no Google Maps</span> ↗
+          </a>
+          <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20estou%20a%20caminho%20da%20loja%20na%20Av.%20Bernardo%20Say%C3%A3o!" target="_blank" rel="noopener" class="btn-call">
+            <span>Avisar Chegada</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DLuz Digital Ecosystem Strip -->
+  <div class="dluz-showcase-strip">
+    <div class="wrap dluz-inner">
+      <div class="dluz-left">
+        <span class="dluz-badge-tag">DLuz Digital</span>
+        <span>Projeto demonstrativo exclusivo desenvolvido para a <strong>Papelaria do Estudante</strong>.</span>
+      </div>
+      <div>
+        <a href="proposta.html" target="_blank" class="btn-dluz-proposta">
+          <span>Acessar Proposta Comercial &amp; Diagnóstico</span> →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; overflow: hidden; background: #fff; display: flex; align-items: center; justify-content: center;">
+              <img src="assets/logo.jpg" alt="Logo" style="width: 100%; height: 100%; object-fit: contain;" />
+            </div>
+            <div>
+              <strong style="color: #ffffff; font-size: 16px; display: block;">Papelaria do Estudante</strong>
+              <span style="color: var(--red); font-size: 12px; font-weight: 700; text-transform: uppercase;">Simplesmente completo!</span>
+            </div>
+          </div>
+          <p style="font-size: 13.5px; line-height: 1.6; max-width: 380px;">
+            Tradição em materiais escolares, artigos para escritório, literatura, presentes criativos e revelação de fotos em Paraíso do Tocantins.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegação Rápida</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cotacao">Simulador de Lista Escolar</a></li>
+            <li><a href="#linhas">Catálogo de 4 Universos</a></li>
+            <li><a href="#corporativo">Atendimento Corporativo (B2B)</a></li>
+            <li><a href="#localizacao">Horários &amp; Endereço</a></li>
+            <li><a href="proposta.html">Proposta Comercial DLuz</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contatos Oficiais</h5>
+          <p style="font-size: 13.5px; line-height: 1.6; margin-bottom: 8px;">
+            📍 Av. Bernardo Sayão, 1010 – Centro<br />Paraíso do Tocantins - TO
+          </p>
+          <p style="font-size: 13.5px; line-height: 1.6; margin-bottom: 8px;">
+            📱 WhatsApp: <a href="https://wa.me/5563992345060" style="color: #4ade80;">(63) 99234-5060</a><br />
+            ☎ Telefone Fixo: (63) 3602-1740<br />
+            📸 Instagram: <a href="https://instagram.com/papelaria_estudantes" target="_blank" style="color: #38bdf8;">@papelaria_estudantes</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Papelaria do Estudante • Todos os direitos reservados.
+        </div>
+        <div style="font-size: 12px; color: #64748b;">
+          Desenvolvido com excelência por <a href="https://dluz.com.br" target="_blank" style="color: #94a3b8; text-decoration: underline;">DLuz Digital</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/5563992345060?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20na%20Papelaria%20do%20Estudante!" target="_blank" rel="noopener" class="wa-float-btn" title="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.04-2.02-.49-1.378-.553-2.28-1.93-2.348-2.02-.069-.092-.56-1.144-.56-2.181 0-1.037.545-1.545.739-1.758.194-.213.424-.266.565-.266.141 0 .282.002.405.008.13.006.304-.049.475.362.176.424.6 1.469.653 1.576.053.107.089.232.018.374-.07.141-.106.232-.212.355-.106.124-.222.277-.318.372-.106.106-.217.221-.093.433.124.212.55 1.055 1.18 1.616.812.724 1.498.948 1.711 1.054.212.106.336.089.46-.053.124-.142.53-.619.672-.831.141-.213.283-.177.476-.106.194.071 1.233.582 1.445.688.212.106.353.159.406.248.053.088.053.513-.091.918z"/></svg>
+  </a>
+
+  <!-- Script: Interactive Quote Form & Store Status -->
+  <script>
+    let currentCategory = "Volta às Aulas / Material Escolar";
+
+    function setCategory(btn, cat) {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory = cat;
+      updatePreview();
+    }
+
+    function updatePreview() {
+      const checks = Array.from(document.querySelectorAll('#checkGrid input[type="checkbox"]:checked')).map(c => c.value);
+      const textoExtra = document.getElementById('listaTexto').value.trim();
+      const nome = document.getElementById('clienteNome').value.trim();
+      const entrega = document.getElementById('entregaModo').value;
+
+      let msg = `Olá, Papelaria do Estudante!\n`;
+      if (nome) msg += `Meu nome é *${nome}*.\n`;
+      msg += `Gostaria de solicitar uma cotação:\n`;
+      msg += `📌 *Categoria:* ${currentCategory}\n`;
+
+      if (checks.length > 0) {
+        msg += `📋 *Itens marcados:*\n` + checks.map(i => ` • ${i}`).join('\n') + `\n`;
+      }
+
+      if (textoExtra) {
+        msg += `📝 *Minha lista / detalhes:*\n${textoExtra}\n`;
+      }
+
+      msg += `🚚 *Preferência:* ${entrega}\n`;
+      msg += `\nPoderiam me passar os valores e disponibilidade? Obrigado!`;
+
+      document.getElementById('msgPreview').textContent = msg;
+
+      const encoded = encodeURIComponent(msg);
+      document.getElementById('waLinkBtn').href = `https://wa.me/5563992345060?text=${encoded}`;
+    }
+
+    // Dynamic Store Open/Closed Status (UTC-3 Tocantins Time)
+    function checkStoreStatus() {
+      const now = new Date();
+      // UTC to UTC-3
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const tocantinsDate = new Date(utc - (3600000 * 3));
+      const day = tocantinsDate.getDay(); // 0 Dom, 6 Sab
+      const hours = tocantinsDate.getHours();
+      const minutes = tocantinsDate.getMinutes();
+      const time = hours + (minutes / 60);
+
+      const statusEl = document.getElementById('store-status');
+      if (day >= 1 && day <= 5) {
+        if (time >= 8 && time < 18) {
+          statusEl.textContent = "Aberto Agora no Centro • Fecha às 18:00";
+        } else {
+          statusEl.textContent = "Fechado Agora • Abre às 08:00";
+        }
+      } else if (day === 6) {
+        if (time >= 8 && time < 12) {
+          statusEl.textContent = "Aberto no Sábado até 12:00";
+        } else {
+          statusEl.textContent = "Fechado Agora • Reabre Segunda às 08:00";
+        }
+      } else {
+        statusEl.textContent = "Fechado Domingo • Reabre Segunda às 08:00";
+      }
+    }
+
+    checkStoreStatus();
+    updatePreview();
+  </script>
+</body>
+</html>
